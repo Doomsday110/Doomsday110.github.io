@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doomsday110 - AI & ML Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+        
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 0.5rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #f9f9f9;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .project-card h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .project-card a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .project-card a:hover {
+            background: #764ba2;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .contact {
+            text-align: center;
+        }
+        
+        .contact a {
+            display: inline-block;
+            margin: 0.5rem 1rem;
+            padding: 0.5rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .contact a:hover {
+            background: #764ba2;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Doomsday110</h1>
+        <p>AI & Machine Learning Developer | Software Engineer</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate developer specializing in AI, machine learning, and software development. With expertise in computer vision, reinforcement learning, and embedded systems, I build intelligent solutions to solve real-world problems.</p>
+            <p>My projects span from obstacle avoidance systems and autonomous vehicle detection to solar tracking systems and intelligent chatbots. I'm committed to continuous learning and pushing the boundaries of what's possible with modern technology.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Obstacle Avoidance</h3>
+                    <p>Developed a real-time obstacle avoidance system using computer vision and path planning algorithms. The system can detect and navigate around obstacles autonomously.</p>
+                    <a href="https://github.com/Doomsday110/Obstacle-Avoidance-" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Car Detection</h3>
+                    <p>Built a deep learning model for real-time car detection using YOLO framework. The model achieves high accuracy in detecting vehicles in traffic scenarios.</p>
+                    <a href="https://github.com/Doomsday110/car_detection" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Q-Learning AI</h3>
+                    <p>Implemented reinforcement learning algorithms for training autonomous agents. The agent learns optimal strategies through interaction with the environment.</p>
+                    <a href="https://github.com/Doomsday110/Q_learning" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Solar Tracking System</h3>
+                    <p>Created an IoT-based solar tracking system that maximizes energy collection by positioning solar panels optimally throughout the day.</p>
+                    <a href="https://github.com/Doomsday110/Solar-Tracking-System" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Intelligent Chatbot</h3>
+                    <p>Developed an AI-powered chatbot using natural language processing. The chatbot can understand and respond to user queries intelligently.</p>
+                    <a href="https://github.com/Doomsday110/chatbot" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Pathfinding Algorithm</h3>
+                    <p>Implemented advanced pathfinding algorithms for finding optimal routes. Applies graph theory to solve complex navigation problems efficiently.</p>
+                    <a href="https://github.com/Doomsday110/best_path" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">Reinforcement Learning</span>
+                <span class="skill-tag">IoT</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
+            <div class="contact">
+                <a href="https://github.com/Doomsday110" target="_blank">GitHub</a>
+                <a href="mailto:contact@example.com">Email</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Doomsday110. All rights reserved. | Built with HTML, CSS & JavaScript</p>
+    </footer>
+</body>
+</html>
